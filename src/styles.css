@@ -3,3 +3,8 @@ main {
     text-align: center;
     position: relative;
 }
+
+html {
+    font-family: 'Ubuntu Mono';
+    font-size: 36px;
+}
