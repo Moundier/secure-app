@@ -1,0 +1,31 @@
+/* Add styles for the navigation bar */
+.navbar {
+ background-color: #333;
+ padding: 10px;
+ color: white;
+}
+
+.navbar_menu {
+ display: flex;
+ justify-content: space-between;
+}
+
+.navbar_start {
+ margin-right: 5px;
+}
+
+.navbar_item {
+ display: inline-block;
+}
+
+.navbar_link {
+ color: white;
+ text-decoration: none;
+ padding: 5px;
+ border-radius: 4px;
+ transition: background-color 0.3s;
+}
+
+.navbar_link:hover {
+ background-color: #555;
+}

@@ -1,0 +1,76 @@
+
+.wrapper {
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.login_message > * {
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.login_widget {
+  min-height: 500px;
+  background-color: #f4f4f4;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+/* Style the footer section */
+footer {
+  margin-top: 20px;
+  text-align: center;
+}
+
+a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Footer Buttons */
+
+.icons_button {
+  padding: 30px;
+  width: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 35px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.icons_button img {
+  min-width: 30px;
+}
+
+.icons_button {
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  background-color: #272424;
+}
+
+.icons_button:hover {
+  background-color: #150b56;
+}
+
+.login_icons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.login_icons img {
+  width: 18px;
+}
+
+.login_icons {
+  margin-top: 20px;
+}
