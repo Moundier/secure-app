@@ -1,7 +1,7 @@
 /* Add styles for the navigation bar */
 
 * {
-  font-size: 12px;
+  font-size: 20px;
 }
 
 .tabs {
@@ -69,7 +69,7 @@ button svg {
   padding-left: .75em;
   padding-right: .75em;
   margin-right: .5em;
-  font-size: 16px;
+  font-size: 20px;
 }
 
 span {
