@@ -10,8 +10,8 @@ import { Tab0Component } from "./tab-0/tab-0.component";
 const routes: Routes = [
     { path: 'login', component: PageLoginComponent }, 
     {
-        path: 'tabs',
-        redirectTo: 'tabs/tab-0', // Redirect to tab-1 by default
+        path: '',
+        redirectTo: 'tabs/tab-1', // Redirect to tab-1 by default
         pathMatch: 'full',
     },
     {

@@ -1,7 +1,7 @@
 /* Add styles for the navigation bar */
 
 * {
-  font-size: 14px;
+  font-size: 12px;
 }
 
 .tabs {
@@ -54,24 +54,34 @@ button svg {
 }
 
 .sign_in {
-  background: lightskyblue;
+  border-radius: 2px;
+  background: rgb(255, 21, 21);
+  transition: transform 0.3s ease; 
+}
+
+.sign_in:hover {
+  transform: scale(1.1); 
 }
 
 .sign_in, span {
   margin-left: .5em;
-  border-radius: 50px;
   padding: 5px;
   padding-left: .75em;
   padding-right: .75em;
   margin-right: .5em;
-  font-size: 20px;
+  font-size: 16px;
+}
+
+span {
+  border-radius: 50px;
 }
 
 span.light_mode {
-  background: #fff;
+  color: #fba402;
+  background: #030303;
 }
 
 span.night_mode {
-  color: #fff;
+  color: #f7e303;
   background: #222222;
 }
