@@ -11,6 +11,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { TabsComponent } from './tabs/tabs.component';
 
 import { IonicModule } from '@ionic/angular';
+import { ThemeService } from './service/theme.service';
 
 @NgModule({
   declarations: [
@@ -28,6 +29,9 @@ import { IonicModule } from '@ionic/angular';
   ],
   exports: [
     RouterModule
+  ],
+  providers: [
+    ThemeService
   ],
   bootstrap: [
     AppComponent
