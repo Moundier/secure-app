@@ -1,31 +1,24 @@
-<nav class="navbar">
- <div class="navbar_menu">
-   <div class="navbar_start">
-     <div class="navbar_item">
-       <a routerLink="tab-1" class="navbar_link">
-         Left Page
-       </a>
-     </div>
-   </div>
+<nav class="tabs">
+  <div class="division">
+    <div class="navigation">
+      <button routerLink="tab-0" class="tab_btn" routerLinkActive="active">Icon</button>
+      <button routerLink="tab-1" class="tab_btn" routerLinkActive="active">Explore</button>
+      <button routerLink="tab-2" class="tab_btn" routerLinkActive="active">Roadmaps</button>
+      <button routerLink="tab-3" class="tab_btn" routerLinkActive="active">Pro</button>  
+    </div>
 
-   <div class="navbar_start">
-     <div class="navbar_item">
-       <a routerLink="tab-2" class="navbar_link">
-         About
-       </a>
-     </div>
-   </div>
-
-   <div class="navbar_start">
-     <div class="navbar_item">
-       <a routerLink="tab-3" class="navbar_link">
-         Right Page
-       </a>
-     </div>
-   </div>
- </div>
+    <div class="options">
+      <button (click)="toggleTheme()">
+        <span [ngClass]="{ 'light_mode': this.themeService.getCurrentTheme() !== 'dark' }" *ngIf="this.themeService.getCurrentTheme() !== 'dark';" class="material-symbols-outlined">brightness_7</span>
+        <span [ngClass]="{ 'night_mode': this.themeService.getCurrentTheme() === 'dark' }" *ngIf="this.themeService.getCurrentTheme() === 'dark';" class="material-symbols-outlined">dark_mode</span>
+      </button>
+      <button class="sign_in">
+        <p>Sign in</p>
+      </button>
+    </div>
+  </div>
 </nav>
 
 <main [@routeAnimations]="prepareRoute(outlet)" class="content">
- <router-outlet #outlet="outlet"></router-outlet>
+  <router-outlet #outlet="outlet"></router-outlet>
 </main>
