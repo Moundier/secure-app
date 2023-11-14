@@ -20,14 +20,10 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 - `npx ng serve --open`
 - `npx ng add @angular/material`
 
-## Observations
-In `app-routing.module.ts`, within the `tabs` path, child routes are defined. 
-
-To enable animations in each child, unique identifiers are set using 
-
-```js
-data: { animation: 'tab-1' }, 
-data: { animation: 'tab-2' }, 
-data: { animation: 'tab-3' } 
-```
-These identifiers serve as unique markers to trigger animations in their respective components.
+## Todo
+- [x] SignIn Page
+- [x] tabs-user (tabs)
+- [ ] tabs-admin
+- [ ] list courses (user)
+- [ ] course-nav (list sections and display lessons, from specific course)
+- [ ] admin over course, can create, edit and delete

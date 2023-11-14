@@ -18,7 +18,7 @@ const routes: Routes = [
         path: 'tabs',
         component: TabsComponent,
         children: [
-            { path: 'tab-0', component: Tab0Component, data: { animation: 'tab-0' } },
+            { path: 'tab-0', component: Tab0Component, data: { animation: 'tab-0' } }, // The data property works as ID for routes
             { path: 'tab-1', component: Tab1Component, data: { animation: 'tab-1' } },
             { path: 'tab-2', component: Tab2Component, data: { animation: 'tab-2' } },
             { path: 'tab-3', component: Tab3Component, data: { animation: 'tab-3' } },

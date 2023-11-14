@@ -11,6 +11,8 @@
   font-size: 12px;
 }
 
+/* Alignment Wrapper  */
+
 .wrapper {
   max-width: 500px;
   margin: 0 auto;
@@ -64,22 +66,18 @@ a:hover {
 }
 
 .icons_button {
+  padding-top: 5px;
   width: 25%;
-  border-radius: 10px;
+  border-radius: 6px;
   height: 40px;
   cursor: pointer;
-  border: 4px solid #aaaaaa;
   padding: 1rem;
   display: flex;
   align-items: center;
   justify-content: center;
-  transition: transform 0.3s ease; 
-  background: #003a78;
-}
-
-.icons_button:hover {
-  transform: scale(1.05); 
-  background: #242424;
+  border: none;
+  background: #d7d7d7;
+  transition: background-color 0.3s ease; 
 }
 
 .login_icons {
@@ -89,7 +87,45 @@ a:hover {
   gap: 10px;
 }
 
+.mg_top {
+  margin-top: 10px;
+}
 
-.login_icons {
-  margin-top: 20px;
+.icon {
+  width: 25%;
+  border-radius: 6px;
+  height: 40px;
+  cursor: pointer;
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  transition: background-color 0.3s ease; 
+}
+
+.custom-color {
+  background-color: #d9d9d9/* Replace with your desired background color */
+}
+
+.custom-color:hover {
+  background-color: #878787; /* Replace with your desired hover background color */
+}
+
+.enter {
+  border-radius: 4px;
+  padding: 10px;
+  border: none;
+  overflow: hidden;
+  box-shadow: 0 10px 8px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+  transition: transform 0.2s ease;
+}
+
+.enter:hover {
+  transform: scale(1.1); 
+}
+
+.enter:active {
+  transform: scale(1); 
 }

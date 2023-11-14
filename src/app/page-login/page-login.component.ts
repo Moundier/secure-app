@@ -2,14 +2,17 @@ import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { Validators } from '@angular/forms';
 import { FormControl } from '@angular/forms';
+import { ReactiveFormsModule } from '@angular/forms';
 
 import { MatInputModule } from '@angular/material/input';
-import { ReactiveFormsModule } from '@angular/forms';
+import { MatIconModule } from '@angular/material/icon';
+import { MatButtonModule } from '@angular/material/button';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-page-login',
   standalone: true,
-  imports: [CommonModule, ReactiveFormsModule, MatInputModule],
+  imports: [CommonModule, ReactiveFormsModule, MatInputModule, MatIconModule, MatButtonModule],
   templateUrl: './page-login.component.html',
   styleUrl: './page-login.component.css'
 })
@@ -19,6 +22,10 @@ export class PageLoginComponent {
   name = new FormControl('', [Validators.required, Validators.minLength(6)]);
   password = new FormControl('', [Validators.required, Validators.pattern(/^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$/)]);
   confirmPassword = new FormControl('', [Validators.required]);
+
+  constructor(private router: Router) {
+
+  }
 
   getErrorMessage(field: string): string {
 
@@ -38,5 +45,9 @@ export class PageLoginComponent {
       return 'Passwords do not match';
 
     return '';
+  }
+
+  handleButtonClick(): void {
+    this.router.navigate([`tabs/tab-1`]);
   }
 }
