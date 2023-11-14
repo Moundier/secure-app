@@ -4,55 +4,52 @@
       <h1>Welcome back</h1>
       <p>Log in to OpenBook to continue Exploring.</p>
     </header>
-    
-    <!-- Ionic -->
-    
-    <ion-list>
-      <ion-item>
-        <ion-input label="Default input"></ion-input>
-      </ion-item>
-    
-      <ion-item>
-        <ion-input label="Input with placeholder" placeholder="Enter company name"></ion-input>
-      </ion-item>
-    
-      <ion-item>
-        <ion-input label="Input with value" value="121 S Pinckney St #300"></ion-input>
-      </ion-item>
-    
-      <ion-item>
-        <ion-input label="Readonly input" value="Madison" [readonly]="true"></ion-input>
-      </ion-item>
-    
-      <ion-item>
-        <ion-input label="Disabled input" value="53703" [disabled]="true"></ion-input>
-      </ion-item>
-    </ion-list>
 
+    <!-- Angular Material -->
+    <mat-form-field class="input" appearance="fill">
+      <mat-label>Enter your email</mat-label>
+      <input matInput placeholder="johndoe@example.com" [formControl]="email" required>
+      <mat-error *ngIf="email.invalid">{{ this.getErrorMessage('email') }}</mat-error>
+    </mat-form-field>
 
-    <p>Don't have an account? <a href="/create/account/link" aria-label="">Sign up</a></p>
+    <mat-form-field class="input" appearance="fill">
+      <mat-label>Enter your name (more than 5 characters)</mat-label>
+      <input matInput placeholder="John Doe" [formControl]="name" required>
+      <mat-error *ngIf="name.invalid">{{ getErrorMessage('name') }}</mat-error>
+    </mat-form-field>
+    
+    <mat-form-field class="input" appearance="fill">
+      <mat-label>Enter your password</mat-label>
+      <input matInput type="password" placeholder="********" [formControl]="password" required>
+      <mat-error *ngIf="password.invalid">{{ getErrorMessage('password') }}</mat-error>
+    </mat-form-field>
+    
+    <mat-form-field class="input" appearance="fill">
+      <mat-label>Confirm your password</mat-label>
+      <input matInput type="password" placeholder="********" [formControl]="confirmPassword" required>
+      <mat-error *ngIf="confirmPassword.invalid">{{ getErrorMessage('confirmPassword') }}</mat-error>
+    </mat-form-field>
+
+    <p class="mg_top">Don't have an account? <a href="/create/account/link" aria-label="">Sign up</a></p>
   </main>
 
   <footer>
 
     <div class="login_icons">
       <button type="button" class="icons_button">
-        <img src="../../assets/google-icon.png" alt="google">
-        <label for="">Continue with Google</label>
+        <img src="../../assets/icon-google.png" alt="google">
       </button>
 
       <button type="button" class="icons_button">
-        <img src="../../assets/apple-icon.png" alt="apple">
-        <label for="">Continue with Apple</label>
+        <img src="../../assets/icon-facebook.png" alt="facebook">
       </button>
 
       <button type="button" class="icons_button">
-        <img src="../../assets/facebook-icon.png" alt="facebook">
-        <label for="">Continue with Facebook</label>
+        <img src="../../assets/icon-apple.png" alt="apple">
       </button>
     </div>
 
-    <div class="footer_margin">
+    <div class="mg_top">
       <a href="https://openai.com/policies/terms-of-use" target="_blank">Terms of use</a> |
       <a href="https://openai.com/policies/privacy-policy" target="_blank">Privacy policy</a>
     </div>

@@ -10,8 +10,20 @@ import { Tab3Component } from './tab-3/tab-3.component';
 import { AppRoutingModule } from './app-routing.module';
 import { TabsComponent } from './tabs/tabs.component';
 
-import { IonicModule } from '@ionic/angular';
-import { ThemeService } from './service/theme.service';
+import { ThemeService } from './tabs/theme.service';
+
+/* Angular Material */
+
+import { MatButtonModule } from '@angular/material/button'
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatInputModule } from '@angular/material/input';
+import { MatIconModule } from '@angular/material/icon';
+import { MatTooltipModule } from '@angular/material/tooltip';
+import { MatLabel } from '@angular/material/form-field';
+
+/* Forms */
+
+import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -22,10 +34,17 @@ import { ThemeService } from './service/theme.service';
     Tab3Component,
   ],
   imports: [
-    IonicModule, /* Ionic */  
     BrowserModule,
     BrowserAnimationsModule,
-    AppRoutingModule
+    AppRoutingModule,
+    /* Angular Material */
+    MatButtonModule,
+    MatFormFieldModule,
+    MatInputModule,
+    MatIconModule,
+    MatTooltipModule,
+    /* Form */
+    ReactiveFormsModule,
   ],
   exports: [
     RouterModule

@@ -18,6 +18,7 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 
 ## Commands
 - `npx ng serve --open`
+- `npx ng add @angular/material`
 
 ## Observations
 In `app-routing.module.ts`, within the `tabs` path, child routes are defined. 

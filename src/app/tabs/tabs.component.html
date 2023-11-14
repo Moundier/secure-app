@@ -9,12 +9,12 @@
 
     <div class="options">
       <button (click)="toggleTheme()">
-        <span [ngClass]="{ 'light_mode': this.themeService.getCurrentTheme() !== 'dark' }" *ngIf="this.themeService.getCurrentTheme() !== 'dark';" class="material-symbols-outlined">brightness_7</span>
-        <span [ngClass]="{ 'night_mode': this.themeService.getCurrentTheme() === 'dark' }" *ngIf="this.themeService.getCurrentTheme() === 'dark';" class="material-symbols-outlined">dark_mode</span>
+        <span [ngClass]="{ 'light': this.isLightTheme() }" *ngIf="this.isLightTheme()" class="material-symbols-outlined">brightness_7</span>
+        <span [ngClass]="{ 'dark': this.isDarkTheme() }" *ngIf="this.isDarkTheme()" class="material-symbols-outlined">dark_mode</span>
       </button>
-      <button class="sign_in">
-        <p>Sign in</p>
-      </button>
+
+      <button class="margin_left" mat-raised-button>Sign in</button>
+
     </div>
   </div>
 </nav>

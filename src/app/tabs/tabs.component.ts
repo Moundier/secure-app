@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { fader } from '../route-animations';
-import { ThemeService } from '../service/theme.service';
+import { ThemeService } from './theme.service';
 
 @Component({
   selector: 'app-tabs',
@@ -17,6 +17,14 @@ export class TabsComponent {
 
   toggleTheme() {
     this.themeService.toggleTheme();
+  }
+
+  isLightTheme(): boolean {
+    return this.themeService.getCurrentTheme() !== 'dark';
+  }
+
+  isDarkTheme(): boolean {
+    return this.themeService.getCurrentTheme() === 'dark';
   }
 
   prepareRoute(outlet: RouterOutlet) {

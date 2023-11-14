@@ -1,3 +1,15 @@
+/* Apply styles to the mat-form-field and its children */
+.input mat-form-field,
+.input mat-label,
+.input input.mat-input,
+.input mat-error {
+  font-size: 14px;
+}
+
+/* Apply font size to the text being inserted */
+.input input.mat-input {
+  font-size: 12px;
+}
 
 .wrapper {
   max-width: 500px;
@@ -10,14 +22,13 @@
   margin-bottom: 10px;
 }
 
-.login_widget {
-  min-height: 500px;
-  background-color: #f4f4f4;
-  padding: 20px;
-  border-radius: 8px;
+.input {
+  font-size: 12px;
+  width: 400px;
 }
 
 /* Style the footer section */
+
 footer {
   margin-top: 20px;
   text-align: center;
@@ -34,42 +45,50 @@ a:hover {
 
 /* Footer Buttons */
 
-.icons_button {
-  padding: 30px;
-  width: 300px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  height: 35px;
-  border-radius: 5px;
-  cursor: pointer;
+
+.top {
+  margin-top: 20px;
 }
 
-.icons_button img {
-  min-width: 30px;
-}
-
-.icons_button {
-  color: #fff;
-  border: none;
-  border-radius: 8px;
-  background-color: #272424;
-}
-
-.icons_button:hover {
-  background-color: #150b56;
-}
+/* Icons */
 
 .login_icons {
   display: flex;
-  flex-direction: column;
   align-items: center;
+  justify-content: center;
   gap: 10px;
 }
 
 .login_icons img {
-  width: 18px;
+  max-width: 24px;
 }
+
+.icons_button {
+  width: 25%;
+  border-radius: 10px;
+  height: 40px;
+  cursor: pointer;
+  border: 4px solid #aaaaaa;
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.3s ease; 
+  background: #003a78;
+}
+
+.icons_button:hover {
+  transform: scale(1.05); 
+  background: #242424;
+}
+
+.login_icons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
 
 .login_icons {
   margin-top: 20px;

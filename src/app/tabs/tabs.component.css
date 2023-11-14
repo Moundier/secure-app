@@ -37,7 +37,7 @@ button svg {
   background-color: #1e1e1e;
 }
 
-/* Divisor */
+/* Division */
 
 .division {
   display: flex;
@@ -53,16 +53,6 @@ button svg {
   justify-content: flex-end;
 }
 
-.sign_in {
-  border-radius: 2px;
-  background: rgb(255, 21, 21);
-  transition: transform 0.3s ease; 
-}
-
-.sign_in:hover {
-  transform: scale(1.1); 
-}
-
 .sign_in, span {
   margin-left: .5em;
   padding: 5px;
@@ -76,12 +66,16 @@ span {
   border-radius: 50px;
 }
 
-span.light_mode {
+span.light {
   color: #fba402;
   background: #030303;
 }
 
-span.night_mode {
+span.dark {
   color: #f7e303;
   background: #222222;
+}
+
+.margin_left {
+  margin-left: 20px;
 }
