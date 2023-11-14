@@ -14,9 +14,12 @@
 /* Alignment Wrapper  */
 
 .wrapper {
-  max-width: 500px;
+  max-width: 430px;
   margin: 0 auto;
+  margin-top: 40px;
   padding: 20px;
+  border-radius: 10px;
+  border: .8px solid black;
 }
 
 .login_message > * {

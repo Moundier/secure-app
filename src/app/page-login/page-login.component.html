@@ -1,4 +1,5 @@
 <div class="wrapper">
+  
   <main class="login_widget">
     <header class="login_message">
       <h1>Welcome back</h1>
@@ -41,27 +42,28 @@
     <button class="enter mg_top margin_left" (click)="handleButtonClick()">Sign in</button>
 
     <p class="mg_top">Don't have an account? <a href="/create/account/link" aria-label="">Sign up</a></p>
+
+    <footer>
+      <div class="login_icons">
+        <button class="icon custom-color" mat-button>
+          <img src="../../assets/icon-google.png" alt="google">
+        </button>
+  
+        <button class="icon custom-color" mat-button>
+          <img src="../../assets/icon-facebook.png" alt="facebook">
+        </button>
+  
+        <button class="icon custom-color" mat-button>
+          <img src="../../assets/icon-apple.png" alt="apple">
+        </button>      
+      </div>
+  
+      <div class="mg_top">
+        <a href="https://openai.com/policies/terms-of-use" target="_blank">Terms of use</a> |
+        <a href="https://openai.com/policies/privacy-policy" target="_blank">Privacy policy</a>
+      </div>
+    </footer>
+
   </main>
-
-  <footer>
-    <div class="login_icons">
-      <button class="icon custom-color" mat-button>
-        <img src="../../assets/icon-google.png" alt="google">
-      </button>
-
-      <button class="icon custom-color" mat-button>
-        <img src="../../assets/icon-facebook.png" alt="facebook">
-      </button>
-
-      <button class="icon custom-color" mat-button>
-        <img src="../../assets/icon-apple.png" alt="apple">
-      </button>      
-    </div>
-
-    <div class="mg_top">
-      <a href="https://openai.com/policies/terms-of-use" target="_blank">Terms of use</a> |
-      <a href="https://openai.com/policies/privacy-policy" target="_blank">Privacy policy</a>
-    </div>
-  </footer>
   
 </div>
